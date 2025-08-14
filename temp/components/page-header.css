@@ -1,0 +1,81 @@
+.page-header {
+    height: fit-content;
+
+    background-image: var(--image); /* '--image' here and everywhere elese is passed from html */
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 160px;
+}
+
+.header-bar { /* The part of the header with the gradient */
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: var(--header-gradient);
+}
+
+.page-header img {
+    height: 100%
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.nav {
+    display: inline-flex;
+    flex-direction: row;
+    flex-basis: 30em;
+    justify-content: space-between;
+    font-size: min(14px, 3vw);
+}
+
+.nav-button {
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: var(--text-hover-color);
+}
+
+.dropdown-button:hover {
+    color: var(--text-color);
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: var(--header-gradient);
+    background-attachment: fixed;
+    display: none;
+    cursor: default;
+}
+
+.dropdown-button:hover .dropdown-menu{
+    color: var(--text-color);
+    display: block;
+}
+
+.dropdown-item {
+    margin: 0em 1em 0em 1em;
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    color: var(--text-hover-color)
+}
