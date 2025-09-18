@@ -1,92 +1,112 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="Keywords" content="Tawa College, EOTC, Education Outside the Classroom, Camp">
-    <meta name="Author" content="Shea Allen">
-    <meta name="Description" content="Tawa College Eotc Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Keywords" content="Tawa College, EOTC, Education Outside the Classroom, Camp">
+        <meta name="Author" content="Shea Allen">
+        <meta name="Description" content="Tawa College EOTC Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Stylesheet Import-->
-    <link rel="Stylesheet" href="css/style.css">
+        <title>Home - EOTC Week - Tawa College</title>
 
-    <!-- Script Import -->
-    <script src="js/nav.js"></script>
-    <script src="components/page-header.js"></script>
+        <!-- Stylesheet Import-->
+        <link rel="Stylesheet" href="css/style.css">
 
+        <!-- Script Import -->
+        <script src="js/nav.js"></script>
+        <script src="page-header-component/page-header.js"></script>
 
-</head>
+        <link rel="icon" type="image/png" href="images/logo.png"/>
 
-<body>
-    <div class = "page-wrapper r", id="page-wrapper">
-        <page-header></page-header>
+    </head>
 
-        <!-- <div class="page-header" style="--image: url(../images/cake.jpg);">
-            <div class="header-bar">
-                <div class="title">
-                    <img class = logo src="images/cake.jpg" onclick="goTo('index')">
-                    <h1>Home</h1>
-                </div>
-
-                <div class="nav">
-                    <div class="nav-button" onclick="goTo('index')"><h2>Home</h2></div>
-                    <div class="nav-button" onclick="goTo('about')"><h2>About</h2></div>
-                    <div class="nav-button dropdown-button"><h2>Activities</h2>
-                        <div class="dropdown-menu">
-                            <div class="dropdown-item" onclick="goTo('forest')"><h4>Adrenaline Forest &&#10;Te Rauparaha Arena</h4></div>
-                            <div class="dropdown-item" onclick="goTo('camp')"><h2>Camp Wainui</h2></div>
-                            <div class="dropdown-item" onclick="goTo('walk')"><h2>Rangituhi Walk</h2></div>
-                            <div class="dropdown-item" onclick="goTo('community')"><h2>Community Service</h2></div>
+    <body>
+        <div class = "page-wrapper r" id="page-wrapper">
+            <page-header id="page-header" style="--image: url(../images/full/hills.jpg)" current-page="home"></page-header>
+            
+            <div class="summary-block" style="--image: url(../images/full/high-ropes.jpg);">
+                    
+                    <div class="summary-half">
+                        <div class="label" onclick="goTo('forest')">
+                            <h1>Adrenaline<br>Forest</h1>
+                            <img src="images/side-arrow.png" class="side-arrow" alt="Go to page">
                         </div>
-                   </div>
-                    <div class="nav-button" onclick="goTo('contact')"><h2>Contact & Forms</h2></div>
+                    </div>
+                    
+                    <div class="summary-half"><p>Challenge yourself on the high ropes! Students get to spend 3 hours climbing and ziplining along a series of courses, each designed for a different skill level.</p></div>
+
+                </div>
+
+            <img class="spacer" src="images/short/smiles.jpg">
+
+            <div class="summary-block flipped" style="--image: url(../images/full/pool.jpg);">
+                    
+                    <div class="summary-half">
+                        <div class="label" onclick="goTo('forest')">
+                            <h1>Te Rauparaha<br>Arena</h1>
+                            <img src="images/side-arrow.png" class="side-arrow" alt="Go to page">
+                        </div>
+                    </div> 
+                    
+                    <div class="summary-half"><p>Go for a swim, ride the hydroslide, or relax in the spas. Students will have exclusive use of the entire aquatic centre, so they can race, play, or hang out with their friends.</p></div>
+
+            </div>
+
+            <img class="spacer" src="images/short/rafts.jpg">
+
+            <div class="summary-block" style="--image: url(../images/full/campfire.jpg);">
+                    
+                    <div class="summary-half">
+                        <div class="label" onclick="goTo('camp')">
+                            <h1>Camp<br>Wainui</h1>
+                            <img src="images/side-arrow.png" class="side-arrow" alt="Go to page">
+                        </div>
+                    </div>
+                    
+                    <div class="summary-half"><p>Pitch a tent at Camp Wainui, where a range of fun activities are available! Build rafts, go kayaking, and hike the beautiful Orongorongo river valley. During the hike, students will get to build fires on the riverbed, and maybe even toast some marshmallows!</p></div>
+
+            </div>
+
+            <img class="spacer" src="images/short/hiking.jpg">
+
+            <div class="summary-block flipped" style="--image: url(../images/full/rangituhi-view.jpg);">
+                    
+                <div class="summary-half">
+                    <div class="label" onclick="goTo('walk')">
+                        <h1>Rangituhi<br>Walk</h1>
+                        <img src="images/side-arrow.png" class="side-arrow" alt="Go to page">
+                    </div>
+                </div>
+                    
+                <div class="summary-half"><p>Traverse the Rangituhi walkway! Navigate to the summit, then descend into the beautiful forest of Te Ngahere o Tawa. On the way, students will learn about all the native plants and birds around them.</p></div>
+
+            </div>
+
+            <img class="spacer" src="images/short/summit.jpg">
+
+
+            <div class="summary-block" style="--image: url(../images/full/bush.jpg);">
+                    
+                <div class="summary-half">
+                    <div class="label" onclick="goTo('community')">
+                        <h1>Community<br>Service</h1>
+                        <img src="images/side-arrow.png" class="side-arrow" alt="Go to page">
+                    </div>
+                </div>
+                
+                <div class="summary-half"><p>Spend a chill day with your friends, helping out in the community. Whether volunteering for a charity or school, or helping an elderly resident with gardening, students always have a lot of fun making Tawa a better place!</p></div>
+
+            </div>
+
+            <div class="footer" style="--image: url(../images/short/phones.jpg);">
+                <div class="footer-bar">
+                    <div class="title">
+                        <p>© Tawa College 2025. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
-        </div> -->
-
-        <div class="summary-block" style="--image: url(../images/cake.jpg);">
-                
-                <h3>Adrenaline Forest</h3> 
-                
-                <p>After a safety briefing students have 3 hours to climb and test yourselves. After having some lunch we will leave Adrenalin Forest and walk to Te Rauparaha Arena, where students have use of the whole of the main pool, spas, sauna, steam room, hydroslide and deep water swimming lane.</p>
-
-            </div>
-
-        <img class="spacer" src="images/cake.jpg">
-
-        <div class="summary-block flipped" style="--image: url(../images/cake.jpg);">
-                
-                <h3>Not a Forest</h3> 
-                
-                <p>After a safety briefing students have 3 hours to climb and test yourselves. After having some lunch we will leave Adrenalin Forest and walk to Te Rauparaha Arena, where students have use of the whole of the main pool, spas, sauna, steam room, hydroslide and deep water swimming lane.</p>
-
-        </div>
-
-        <img class="spacer" src="images/cake.jpg">
-
-        <div class="content-block" style="--image: url(../images/cake.jpg);">
-                
-                <h3>Maybe a Forest?</h3> 
-                
-                <p>Students will meet at Tawa train station at 8:15am, at which time the roll will be taken. If you arrive after that time, you need to make sure to tell a teacher so they know you are here.
-Students will be catching the 8:28am train to Porirua. If anyone is absolutely unable to catch this train, there will be a teacher at the station catching the 8:48am train. This is only for students who cannot possibly make the earlier train, and they will not get the full 3 hours of climbing.
-After lunch, students will spend a couple of hours at the pool. If students are not swimming, there will be a side area for them to relax in.
-The group will then catch the 2:39pm train back to Tawa station, where they will be dismissed.
-</p>
-
-            </div>
-
-        </div>
-
-        <div class="footer" style="--image: url(../images/cake.jpg);">
-            <div class="footer-bar">
-                <div class="title">
-                    <p>© Tawa College 2025. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-
-        
-    </div>
-
-</body>
+            
+        </div>        
+    </body>
+</html>
