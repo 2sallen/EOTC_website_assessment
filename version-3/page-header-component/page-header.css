@@ -1,0 +1,133 @@
+.page-header {
+    height: fit-content;
+
+    background-image: var(--image); /* '--image' here and everywhere else is passed from html */
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 360px;
+}
+
+.header-bar { /* The part of the header with the gradient */
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: var(--header-gradient);
+}
+
+.logo {
+    height: 65px;
+    cursor: pointer;
+    margin: 25px 25px 25px 0;
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+    text-transform: capitalize;
+    white-space: preserve nowrap;
+    margin: -2em 0;
+}
+
+.nav {
+    display: inline-flex;
+    flex-direction: row;
+    flex-basis: 40%;
+    justify-content: space-between;
+    font-size: min(14px, 2.8vw);
+    min-width: 30em;
+}
+
+.nav-button {
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: var(--text-hover-color);
+}
+
+.dropdown-button:hover {
+    color: var(--text-color);
+}
+
+.dropdown-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.dropdown-button img {
+    width: 18px;
+    height: 9px;
+    padding-left: 8px;
+    margin-right: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: var(--header-gradient);
+    background-attachment: fixed;
+    display: none;
+    cursor: default;
+    color: var(--text-color);
+}
+
+.dropdown-button:hover .dropdown-menu{
+    color: var(--text-color);
+    display: block !important;
+}
+
+.dropdown-item {
+    margin: 0em 1em 0em 1em;
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    color: var(--text-hover-color)
+}
+
+.long-title {
+    font-size: 50%;
+}
+
+/* Typography Styling */
+h1 {
+    font-weight: 400;
+    font-size: 4em;
+    line-height: 1em;
+}
+
+h2 {
+    font-weight: normal
+}
+
+h3 {
+    font-weight: normal;
+}
+
+/* The following css rules apply when the viewport width is less that 768px */
+@media (max-width: 768px) {
+    
+    .title:not(.long-title) {
+        font-size: 50%;
+        text-wrap: wrap;
+    }
+    
+    .nav {
+        flex-basis: 100%;
+    }
+
+    .page-header {
+        padding-bottom: 140px;
+    }
+
+    .page-header img {
+        margin-right: 10px;
+    }
+}
